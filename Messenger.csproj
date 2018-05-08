@@ -35,9 +35,11 @@
     <ApplicationIcon>Resources\chat.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="M2Mqtt, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\M2Mqtt.4.0\lib\net40\M2Mqtt.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>packages\M2Mqtt.4.0\lib\net40\M2Mqtt.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -79,7 +81,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
